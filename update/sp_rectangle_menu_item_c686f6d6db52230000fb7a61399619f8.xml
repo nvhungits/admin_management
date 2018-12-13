@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_rectangle_menu_item">
+    <sp_rectangle_menu_item action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <color>default</color>
+        <condition/>
+        <display_1/>
+        <display_2/>
+        <display_date/>
+        <filter/>
+        <glyph/>
+        <hint/>
+        <kb_article/>
+        <kb_category/>
+        <kb_topic/>
+        <label>Incidents</label>
+        <order>100</order>
+        <record_script/>
+        <sc_cat_item/>
+        <sc_category/>
+        <short_description/>
+        <sp_page/>
+        <sp_rectangle_menu display_value="Admin Management - Top Menu">538b5ed2db12230000fb7a61399619fb</sp_rectangle_menu>
+        <sp_rectangle_menu_item/>
+        <sys_class_name>sp_rectangle_menu_item</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-12-13 04:01:25</sys_created_on>
+        <sys_id>c686f6d6db52230000fb7a61399619f8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Incidents</sys_name>
+        <sys_package display_value="Admin Management" source="x_246851_admin_man">6a8a9652db12230000fb7a61399619af</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Admin Management">6a8a9652db12230000fb7a61399619af</sys_scope>
+        <sys_update_name>sp_rectangle_menu_item_c686f6d6db52230000fb7a61399619f8</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-12-13 04:01:25</sys_updated_on>
+        <table/>
+        <type>page</type>
+        <url/>
+        <url_target/>
+    </sp_rectangle_menu_item>
+    <sys_translated_text action="delete_multiple" query="documentkey=c686f6d6db52230000fb7a61399619f8"/>
+</record_update>
