@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[function() {
+  /* widget controller */
+  var c = this;
+}]]></client_script>
+        <controller_as>c</controller_as>
+        <css>body{&#13;
+  font-family: unset;&#13;
+}</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>false</has_preview>
+        <id>sun_group_ss_main</id>
+        <internal>false</internal>
+        <link/>
+        <name>Sun Group Sầm Sơn - Main</name>
+        <option_schema/>
+        <public>true</public>
+        <roles/>
+        <script><![CDATA[(function() {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-12-19 02:06:22</sys_created_on>
+        <sys_id>b7541518db22230000fb7a61399619c1</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_name>Sun Group Sầm Sơn - Main</sys_name>
+        <sys_package display_value="Admin Management" source="x_246851_admin_man">6a8a9652db12230000fb7a61399619af</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Admin Management">6a8a9652db12230000fb7a61399619af</sys_scope>
+        <sys_update_name>sp_widget_b7541518db22230000fb7a61399619c1</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-12-19 02:36:27</sys_updated_on>
+        <template><![CDATA[<div class="panel panel-info">
+  <div class="panel-heading">
+    <h1>Sun Group đầu tư dự án 1260 ha cho Thanh Hóa</h1>
+  </div>
+  <div class="panel-body">
+    <h4>
+      Tập đoàn Sun Group đã chính thức hoàn thiện pháp lý, được cơ quan nhà nước có thẩm quyền ký phê duyệt 1/500 để tiến hành đưa dự án Sun Group Thanh Hóa vào triển khai. Giới chuyên gia nhận định, nơi đây sẽ trở thành một trong những dự án tầm cỡ của tập đoàn tại khu vực, gồm các loại hình khu đô thị sinh thái kết hợp nghỉ dưỡng, vui chơi giải trí cao cấp và du lịch biển Sầm Sơn.
+    </h4>
+    <li>Tổng diện tích dự án đạt 1.260,41 ha</li>
+    <li>Phần mặt nước và biển là 17,81ha, chiếm 1,4% tổng diện tích quy hoạch.</li>
+    <li>Phía Bắc giáp phường Quảng Cư, khu dân cư phường Quảng Tiến và sông Mã</li>
+    <li>Phía Nam giáp xã Quảng Hải thuộc huyện Quảng Xương</li>
+    <li>Phía Đông giáp khu dân cư thuộc các phường Quảng Tiến, Quảng Cư, Bắc Sơn, Trường Sơn và Biển Đông</li>
+    <li>Phía Tây giáp khu dân cư thuộc các phường Quảng Châu, Quảng Thọ, Quảng Vinh và khu dân cư thuộc các xã Quảng Minh, Quảng Hùng, Quảng Đại</li>
+  </div>
+</div>]]></template>
+    </sp_widget>
+</record_update>

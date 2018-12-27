@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_container">
+    <sp_container action="INSERT_OR_UPDATE">
+        <background_color/>
+        <background_image/>
+        <background_style>default</background_style>
+        <bootstrap_alt>false</bootstrap_alt>
+        <class_name/>
+        <container_class_name/>
+        <name>Admin Management - Home - Container 1</name>
+        <order>1</order>
+        <sp_page display_value="ad_mng_home">a35b1ed2db12230000fb7a613996191a</sp_page>
+        <subheader>false</subheader>
+        <sys_class_name>sp_container</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-12-20 06:31:07</sys_created_on>
+        <sys_id>2dfb9f64db22230000fb7a6139961945</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Admin Management - Home - Container 1</sys_name>
+        <sys_package display_value="Admin Management" source="x_246851_admin_man">6a8a9652db12230000fb7a61399619af</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Admin Management">6a8a9652db12230000fb7a61399619af</sys_scope>
+        <sys_update_name>sp_container_2dfb9f64db22230000fb7a6139961945</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-12-20 06:31:07</sys_updated_on>
+        <title/>
+        <width>container</width>
+    </sp_container>
+</record_update>

@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sp_angular_provider">
     <sp_angular_provider action="INSERT_OR_UPDATE">
         <name>adMngDropdownTree</name>
-        <script><![CDATA[function AdMngDropdownTreeTem(){
+        <script><![CDATA[function adMngDropdownTree(){
 	return {
-		template: "<ul class='dropdown-menu'>" +
-			"<li class='dropdown-menu-line' ng-repeat='mi in items'>" +
-				"<ng-include src='templateURL' />" +
-			"</li>" +
-		"</ul>",
+		template: "<li class='dropdown-menu-line' " + 
+					"style='min-width: 20em;'" +
+					"ng-repeat='mi in items' ng-include='templateURL()'></li>",
 		scope: {
-			items: items
+			items: "="
 		},
-		controller: function(){
-			$scope.templateURL = "AdMngDropdownTreeTemplate";
+		controller: function($scope){
+			$scope.templateURL= function(){
+				return "AdMngDropdownTreeTemplate";
+			};
 		}
 	};
 }]]></script>
@@ -20,14 +20,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2018-12-13 04:38:18</sys_created_on>
         <sys_id>94ee765adb52230000fb7a61399619de</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>8</sys_mod_count>
         <sys_name>adMngDropdownTree</sys_name>
         <sys_package display_value="Admin Management" source="x_246851_admin_man">6a8a9652db12230000fb7a61399619af</sys_package>
         <sys_policy/>
         <sys_scope display_value="Admin Management">6a8a9652db12230000fb7a61399619af</sys_scope>
         <sys_update_name>sp_angular_provider_94ee765adb52230000fb7a61399619de</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-12-13 04:43:26</sys_updated_on>
+        <sys_updated_on>2018-12-19 06:59:59</sys_updated_on>
         <type>directive</type>
     </sp_angular_provider>
 </record_update>
