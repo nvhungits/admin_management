@@ -28,6 +28,40 @@
   margin: 3px;
   padding: 30px;
   background: blue;
+}
+.menu_mobile{
+  display:none;
+  width: 75%;
+  background-image: url(https://cdn4.iconfinder.com/data/icons/tupix-1/30/list-512.png);
+  background-position: right;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+
+
+@media screen and (max-width:1000px){
+  .menu {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width:850px){
+  .menu {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width:750px){
+  .menu {
+    font-size: 10px;
+  }
+}
+@media screen and (max-width:650px){
+  .menu {
+    display:none;
+  }
+  .menu_mobile{
+    display:initial;
+  }
 }</css>
         <data_table>sp_instance</data_table>
         <demo_data/>
@@ -40,7 +74,7 @@
         <link/>
         <name>Sầm Sơn - Header</name>
         <option_schema/>
-        <public>false</public>
+        <public>true</public>
         <roles/>
         <script><![CDATA[(function() {
   /* populate the 'data' object */
@@ -52,36 +86,35 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2018-12-27 01:41:01</sys_created_on>
         <sys_id>a0ac127adbea230000fb7a6139961998</sys_id>
-        <sys_mod_count>10</sys_mod_count>
+        <sys_mod_count>27</sys_mod_count>
         <sys_name>Sầm Sơn - Header</sys_name>
         <sys_package display_value="Admin Management" source="x_246851_admin_man">6a8a9652db12230000fb7a61399619af</sys_package>
         <sys_policy/>
         <sys_scope display_value="Admin Management">6a8a9652db12230000fb7a61399619af</sys_scope>
         <sys_update_name>sp_header_footer_a0ac127adbea230000fb7a6139961998</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-12-27 02:12:53</sys_updated_on>
+        <sys_updated_on>2018-12-27 08:52:41</sys_updated_on>
         <template><![CDATA[<div class="header logo">
 	LOGO
 </div>
+
+<div class="header menu_mobile"></div>
 
 <div class="header menu">
   <div class="menu_item">
     Menu 1
   </div>
   <div class="menu_item">
-    Menu 1
+    Menu 2
   </div>
   <div class="menu_item">
-    Menu 1
+    Menu 3
   </div>
   <div class="menu_item">
-    Menu 1
+    Menu 4
   </div>
   <div class="menu_item">
-    Menu 1
-  </div>
-  <div class="menu_item">
-    Menu 1
+    Menu 5
   </div>
 </div>]]></template>
     </sp_header_footer>
