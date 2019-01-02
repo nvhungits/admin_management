@@ -3,10 +3,7 @@
         <category>custom</category>
         <client_script><![CDATA[function($scope) {
   var c = this;
-	
-	$scope.select = function(item){
-		item.active = !item.active;
-	};
+	//console.log(c.data);
 }]]></client_script>
         <controller_as>c</controller_as>
         <css/>
@@ -20,40 +17,46 @@
         <internal>false</internal>
         <link/>
         <name>Admin Management - Banner Widget</name>
-        <option_schema/>
+        <option_schema>[{"hint":"","name":"table","default_value":"incident","section":"Data","label":"Table Name","type":"string"},{"name":"paging","section":"other","default_value":"true","label":"paging","type":"boolean"},{"name":"numberofpage","section":"other","default_value":"5","label":"NumberOfPage","type":"integer"},{"name":"fields","section":"Data","default_value":"number","label":"fields","type":"string"}]</option_schema>
         <public>false</public>
         <roles/>
         <script><![CDATA[(function() {
-
-	data.items = [];
-	var columns = 10, rows = 9;
-	for(var i = 0; i < rows; i++){
-		var items = [];
-		for(var j = 0; j < columns; j++){
-			items.push({
-				id: i + "x" + j,
-				active: false
-			});
-		}
-		data.items.push({
-			items: items
-		});
-	}
-	
-	var ATTR_INACTIVE_STATES = "close_states",
-   ATTR_DEFAULT_WORK = "default_work_state",
-   ATTR_DEFAULT_CLOSE = "default_close_state";
-
-	var gr = new GlideRecord("task");
-	//gr.addQuery("sys_id", "f11a9122dba2a7002c7e8b4b0b9619cd");
+	var table = data.table = options.table;
+	var records = data.records = [];
+	var fields = data.fields = options.fields;
+	var gr = new GlideRecord(table);
+	gr.setLimit(options.numberofpage);
 	gr.query();
+	var fieldsTemp = [];
 	if(gr.next()){
-		console.log("Number: " + gr.getValue("number"));
-		var field = gr.getElement('state');
-		data.dataTEST = {
-			choices: field.getChoices(),
-			value: field.getAttribute("ATTR_DEFAULT_WORK")
-		};
+		var grForm = $sp.getForm(table, gr.getUniqueValue());
+		for(var i in grForm._view){
+			fieldsTemp.push(grForm._view[i].name);
+		}
+		fields = fieldsTemp.toString();
+		getRecord(gr);
+		while(gr.next()){
+			getRecord(gr);
+		}
+	}
+
+
+	function getRecord(glideRecord){
+		var grForm = $sp.getForm(table, glideRecord.getUniqueValue());
+		var recordElements = {};
+		$sp.getRecordElements(recordElements, glideRecord, fields);
+		var recordValues = {};
+		$sp.getRecordValues(recordValues, glideRecord, fields);
+		var variables = $sp.getRecordVariables(glideRecord);
+		var recordDisplayValues = {};
+		$sp.getRecordDisplayValues(recordDisplayValues, glideRecord, fields);
+		records.push({
+			recordElements: recordElements, 
+			recordValues: recordValues,
+			recordDisplayValues: recordDisplayValues,
+			variables: variables,
+			grForm: grForm
+		});
 	}
 })();]]></script>
         <servicenow>false</servicenow>
@@ -61,24 +64,18 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2018-12-20 06:32:08</sys_created_on>
         <sys_id>1f0c17e4db22230000fb7a613996199f</sys_id>
-        <sys_mod_count>31</sys_mod_count>
+        <sys_mod_count>73</sys_mod_count>
         <sys_name>Admin Management - Banner Widget</sys_name>
         <sys_package display_value="Admin Management" source="x_246851_admin_man">6a8a9652db12230000fb7a61399619af</sys_package>
         <sys_policy/>
         <sys_scope display_value="Admin Management">6a8a9652db12230000fb7a61399619af</sys_scope>
         <sys_update_name>sp_widget_1f0c17e4db22230000fb7a613996199f</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-12-26 03:33:45</sys_updated_on>
+        <sys_updated_on>2018-12-31 03:26:30</sys_updated_on>
         <template><![CDATA[<div class="panel panel-warning">
-  <div class="panel-heading"><h1>Admin Management - Banner Widget</h1></div>
+  <div class="panel-heading"><h1>Banner</h1></div>
   <div class="panel-body">
-    <div ng-repeat="item in data.items track by $index">
-      <butotn ng-class="{'btn btn-default': true,'active':item.active}" 
-              ng-repeat="item in item.items track by $index"
-              ng-click="select(item)">
-        {{item.id}}
-      </butotn>
-    </div>
+    
   </div>
 </div>]]></template>
     </sp_widget>

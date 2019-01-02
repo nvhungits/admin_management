@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance">
+    <sp_instance action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <class_name/>
+        <color>default</color>
+        <css/>
+        <glyph/>
+        <id/>
+        <order>1</order>
+        <roles/>
+        <short_description/>
+        <size>md</size>
+        <sp_column display_value="1">067a1b4cdb32230000fb7a61399619d9</sp_column>
+        <sp_widget display_value="SS table list view widget">8e7a9388db32230000fb7a6139961972</sp_widget>
+        <sys_class_name>sp_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-12-31 03:23:20</sys_created_on>
+        <sys_id>c27a1b4cdb32230000fb7a61399619db</sys_id>
+        <sys_mod_count>34</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Admin Management" source="x_246851_admin_man">6a8a9652db12230000fb7a61399619af</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Admin Management">6a8a9652db12230000fb7a61399619af</sys_scope>
+        <sys_update_name>sp_instance_c27a1b4cdb32230000fb7a61399619db</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-01-02 08:05:44</sys_updated_on>
+        <title/>
+        <url/>
+        <widget_parameters><![CDATA[{
+	"table": {
+		"value": "sys_user",
+		"displayValue": "sys_user"
+	},
+	"view": {
+		"value": "portal",
+		"displayValue": "portal"
+	},
+	"paging_number": {
+		"value": 9,
+		"displayValue": "9"
+	},
+	"order_by": {
+		"value": "sys_updated_on",
+		"displayValue": "sys_updated_on"
+	},
+	"order_by_type": {
+		"value": "desc",
+		"displayValue": "desc"
+	}
+}]]></widget_parameters>
+    </sp_instance>
+    <sys_translated_text action="delete_multiple" query="documentkey=c27a1b4cdb32230000fb7a61399619db"/>
+</record_update>

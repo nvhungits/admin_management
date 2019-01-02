@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_row">
+    <sp_row action="INSERT_OR_UPDATE">
+        <class_name/>
+        <order>1</order>
+        <sp_column/>
+        <sp_container display_value="SS table list view widget - Test Page - Container 1">467a1b4cdb32230000fb7a61399619d5</sp_container>
+        <sys_class_name>sp_row</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-12-31 03:23:20</sys_created_on>
+        <sys_id>467a1b4cdb32230000fb7a61399619d7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>1</sys_name>
+        <sys_package display_value="Admin Management" source="x_246851_admin_man">6a8a9652db12230000fb7a61399619af</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Admin Management">6a8a9652db12230000fb7a61399619af</sys_scope>
+        <sys_update_name>sp_row_467a1b4cdb32230000fb7a61399619d7</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-12-31 03:23:20</sys_updated_on>
+    </sp_row>
+</record_update>

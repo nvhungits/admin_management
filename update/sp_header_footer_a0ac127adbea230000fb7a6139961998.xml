@@ -13,8 +13,14 @@
 .logo{
   width: 25%;
   font-size: 30px;
-  color: white;
-  background: blue;
+}
+.logo_image{
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height:100%;
+  width: 30%;
+  float:left;
 }
 
 .menu{
@@ -86,16 +92,17 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2018-12-27 01:41:01</sys_created_on>
         <sys_id>a0ac127adbea230000fb7a6139961998</sys_id>
-        <sys_mod_count>27</sys_mod_count>
+        <sys_mod_count>33</sys_mod_count>
         <sys_name>Sầm Sơn - Header</sys_name>
         <sys_package display_value="Admin Management" source="x_246851_admin_man">6a8a9652db12230000fb7a61399619af</sys_package>
         <sys_policy/>
         <sys_scope display_value="Admin Management">6a8a9652db12230000fb7a61399619af</sys_scope>
         <sys_update_name>sp_header_footer_a0ac127adbea230000fb7a6139961998</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-12-27 08:52:41</sys_updated_on>
+        <sys_updated_on>2018-12-28 02:47:15</sys_updated_on>
         <template><![CDATA[<div class="header logo">
-	LOGO
+  <div class="logo_image" style="background-image: url({{::portal.logo}});"></div>
+	<span>{{::portal.title}}</span>
 </div>
 
 <div class="header menu_mobile"></div>
